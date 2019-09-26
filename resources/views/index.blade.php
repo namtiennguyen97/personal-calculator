@@ -11,7 +11,7 @@
 <form method="post">
     @csrf
     <h1>Simple calculator</h1>
-    <table border="1">
+    <table border="1" style="border-color: midnightblue;background-color: #636b6f">
         <tr>
             <th><input type="text" placeholder="First Number" name="firstNum"
                        onkeydown="this.style.backgroundColor='yellow'"
@@ -34,9 +34,11 @@
             <th><input type="submit" value="Check" style="width: 100%; border-radius: 9px;background-color: limegreen">
             </th>
         </tr>
-
+<tr>
+    <th><input type="text" name="result" disabled placeholder="{{$result}}"></th>
+</tr>
     </table>
-    <a>Ket qua la: {{$result}}</a>
+
 </form>
 </body>
 </html>
